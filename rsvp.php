@@ -1,4 +1,5 @@
 <?php
+	echo "Hello World";
 	$msg = "no"; 
     $name     = $_POST['name'];
     $email    = $_POST['email'];
