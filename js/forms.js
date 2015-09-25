@@ -212,12 +212,12 @@ function rsvp_submit()
 		$('#rsvp-loading').show();
 
 		$.ajax({
-			url: '../rsvp.php',
+			url: 'rsvp.php',
 			type: 'POST',
 			//cache: false,
 			data: {'name' : rsvp_name, 'email' : rsvp_email , 'persons' : rsvp_persons, 'wedding' : rsvp_wedding},
 			success: function(data) {
-							if('ok' == 'ok')
+							if(data == 'ok')
 							{
 								$('#rsvp-error').hide();
 								$('#rsvp-failed').hide();
