@@ -206,13 +206,13 @@ function rsvp_submit()
 	else
 	{
 		$('#rsvp-error').hide();
-		$('#rsvp-success').show();
+		$('#rsvp-success').hide();
 		$('#rsvp-failed').hide();
 		$('#rsvp-form').hide();
-		$('#rsvp-loading').hide();
+		$('#rsvp-loading').show();
 
 		$.ajax({
-			url: 'rsvp.php',
+			url: '../rsvp.php',
 			type: 'post',
 			cache: false,
 			data: {'name' : rsvp_name, 'email' : rsvp_email , 'persons' : rsvp_persons, 'wedding' : rsvp_wedding},
