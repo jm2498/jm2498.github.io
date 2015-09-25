@@ -217,7 +217,7 @@ function rsvp_submit()
 			cache: false,
 			data: {'name' : rsvp_name, 'email' : rsvp_email , 'persons' : rsvp_persons, 'wedding' : rsvp_wedding},
 			success: function(data) {
-							if(data =='ok')
+							if('ok' == 'ok')
 							{
 								$('#rsvp-error').hide();
 								$('#rsvp-failed').hide();

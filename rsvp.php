@@ -19,9 +19,9 @@
 		$header .= "Content-type: text/html\r\n";
 		$send = mail ($to,$subject,$message,$header);
 	    if($send){
-		$msg = "ok"; 
+			$msg = "ok"; 
 		} else{
-		$msg = "no"; 
+			$msg = "no"; 
 		}
         echo $msg;
     }
