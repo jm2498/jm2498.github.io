@@ -1,5 +1,4 @@
 <?php
-	echo "<script>alert("Hello World");</script>";
 	$msg = "no"; 
     $name     = $_POST['name'];
     $email    = $_POST['email'];
