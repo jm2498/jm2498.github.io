@@ -215,6 +215,7 @@ function rsvp_submit()
 			url: 'rsvp.php',
 			type: 'post',
 			cache: false,
+			$('#rsvp-success').show();
 			data: {'name' : rsvp_name, 'email' : rsvp_email , 'persons' : rsvp_persons, 'wedding' : rsvp_wedding},
 			success: function(data) {
 							if(data =='ok')
