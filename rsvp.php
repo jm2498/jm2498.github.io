@@ -6,7 +6,7 @@
     $wedding    = $_POST['wedding'];
     
     if($name !='' && $email!='' && $persons !='' && $wedding !=''){
-        $to = "lanternthemes@gmail.com";
+        $to = "jiangyumao@gmail.com";
 	$subject = "RSVP Mail";
 	$message = "<p>Dear Admin,</p><p>You have a RSVP request </p><p>Please find the below information</p>
                     <p>Name :".$name."</p>
