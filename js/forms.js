@@ -213,8 +213,8 @@ function rsvp_submit()
 
 		$.ajax({
 			url: '../rsvp.php',
-			type: 'post',
-			cache: false,
+			type: 'POST',
+			//cache: false,
 			data: {'name' : rsvp_name, 'email' : rsvp_email , 'persons' : rsvp_persons, 'wedding' : rsvp_wedding},
 			success: function(data) {
 							if('ok' == 'ok')
