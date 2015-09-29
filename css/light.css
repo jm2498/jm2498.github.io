@@ -115,7 +115,7 @@ p {
 }
 .banner_timer ul li {
     color: #ffffff;
-	background:rgba(10,186,181,0.8);
+	background:rgba(0,255,239,0.8);
 }
 .logo_top {
     color: #000000;
@@ -182,7 +182,7 @@ p {
     color: #000000;
 }
 .wedding_invitation_parallax {
-    background:url(../img/arrow.png) repeat-x top scroll rgba(10,186,181,0.8);
+    background:url(../img/arrow.png) repeat-x top scroll rgba(0,255,239,0.8);
 }
 .wedding_invitation .thanks_cont p {
 	color:#000000;
@@ -244,7 +244,7 @@ p {
     color: #000000;
 }
 .lovestory_bottom_parallax {
-    background:rgba(10,186,181,0.8) url(../img/arrow.png) repeat-x top;
+    background:rgba(0,255,239,0.8) url(../img/arrow.png) repeat-x top;
 }
 .lovestory_bottom_parallax h2 {
     color: #000000;
@@ -283,7 +283,7 @@ p {
     background: url("../img/parallax04.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 }
 .rsvp_main_parallax {
-    background:rgba(10,186,181,0.8) url(../img/arrow.png) repeat-x top;
+    background:rgba(0,255,239,0.8) url(../img/arrow.png) repeat-x top;
 }
 .rsvp_bottom_bg {
     background:url(../img/arrow1.png) repeat-x bottom;
