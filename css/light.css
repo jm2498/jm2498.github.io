@@ -71,7 +71,7 @@ p {
 	border-color:rgba(251,251,251,0.1);
 }
 .sidebar-nav li a {
-  color: #999999;
+    color: #999999;
 }
 .sidebar-nav li a:hover {
 	background: rgba(0,0,0,0.4);
@@ -79,18 +79,14 @@ p {
 }
 #menu-toggle {
 	color:#ffffff;
-	background-color:rgba(0,0,0,0.2);
+	background-color:rgba(0,255,239,0.4);
 }
 #menu-toggle:hover {
-  color:#ffffff;
+    background-color:rgba(0,255,239,0.8);
 }
 #menu-close {
 	color:#ffffff;
 	border:1px solid #ffffff;
-}
-#sidebar-wrapper.active {
-	background:rgba(0,0,0,0.9);
-	border-left:1px solid #333333;
 }
 .banner_timer ul li, .banner_timer ul li span {
 	color:#ffffff;
@@ -101,9 +97,6 @@ p {
 /* 03. Header Area Styles                                 */
 /* ====================================================== */
 
-.marriage_banner {
-    background:url(../img/arrow1.png) repeat-x bottom;
-}
 .marriage_banner h1 {
     color: #000000;
 }
@@ -118,20 +111,23 @@ p {
 	background:rgba(0,255,239,0.8);
 }
 .logo_top {
+    position: absolute;
+    top: 5%;
+    right: 2%;
     color: #000000;
 }
 .logo_top a {
-    color: #000000;
+    color: #00ffef;
 }
 .logo_top a:hover, .logo_top a:hover {
     color: #000000;
 }
 .top_arrow a {
-    color: #333333;
-    background-color: rgba(251, 251, 251, 0.5);
+    color: #ffffff;
+    background-color: rgba(0,255,239,0.4);
 }
 .top_arrow a:hover {
-    background-color: rgba(251, 251, 251, 0.9);
+    background-color: rgba(0,255,239,0.8);
 }
 .top-scroll a {
     color: #333333;
@@ -142,7 +138,7 @@ p {
 /* ====================================================== */
 
 .about_us {
-    background-color: #ffffff;
+    background: url("../img/bg1.jpg") no-repeat fixed center center;
 }
 .about_us h1 {
     color: #333333;
@@ -152,9 +148,6 @@ p {
 }
 .about_us p {
     color: #333333;
-}
-.about_bottom_bg {
-    background:url(../img/arrow1.png) repeat-x bottom;
 }
 .latest_sermons .groom .img img, .latest_sermons .bride .img img {
 	border:10px solid #cccccc;
@@ -171,7 +164,7 @@ p {
 /* ====================================================== */
 
 .wedding_invitation {
-    background: url("../img/parallax06.jpg") no-repeat fixed center center;
+    background: url("../img/bg1.jpg") no-repeat fixed center center;
     color: #000000;
 }
 .wedding_invitation h2 {
@@ -180,9 +173,6 @@ p {
 }
 .wedding_invitation p {
     color: #000000;
-}
-.wedding_invitation_parallax {
-    background:url(../img/arrow.png) repeat-x top scroll rgba(0,255,239,0.8);
 }
 .wedding_invitation .thanks_cont p {
 	color:#000000;
@@ -240,11 +230,8 @@ p {
 /* ====================================================== */
 
 .lovestory_parallax {
-    background: url("../img/groomtest.jpg") no-repeat fixed center center;
+    background: url("../img/bg1.jpg") no-repeat fixed center center;
     color: #000000;
-}
-.lovestory_bottom_parallax {
-    background:rgba(0,255,239,0.8) url(../img/arrow.png) repeat-x top;
 }
 .lovestory_bottom_parallax h2 {
     color: #000000;
@@ -252,9 +239,6 @@ p {
 }
 .lovestory_bottom_parallax p {
     color: #000000;
-}
-.lovestory_bottom_bg {
-    background:url(../img/arrow1.png) repeat-x bottom;
 }
 .lovestory_bottom_parallax .content_white {
     background-color: rgba(0, 0, 0, 0.3);
@@ -280,13 +264,7 @@ p {
 /* ====================================================== */
 
 .rsvp_main {
-    background: url("../img/parallax04.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
-}
-.rsvp_main_parallax {
-    background:rgba(0,255,239,0.8) url(../img/arrow.png) repeat-x top;
-}
-.rsvp_bottom_bg {
-    background:url(../img/arrow1.png) repeat-x bottom;
+    background: url("../img/invitation.jpeg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 }
 .rsvp_main_parallax h2 {
 	text-shadow:0 1px 1px rgba(251, 251, 251, 0.5);
@@ -429,11 +407,11 @@ p {
     color: #CCCCCC;
 }
 .input_button_w {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
     color: #ffffff;
 }
 .input_button_w:hover {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    background: none repeat scroll 0 0 rgba(0,255,239,0.4);
     color: #ffffff;
 }
 .contact_message {

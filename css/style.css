@@ -189,16 +189,17 @@ p.big-text {
 /* ====================================================== */
 
 #sidebar-wrapper {
-	margin-right: -250px;
-	right: 0;
-	width: 250px;
-	position: fixed;
-	height: 100%;
-	overflow-y:none;
-	z-index: 1000;
-	transition: all 300ms linear 0s;
-	-webkit-transform:all 300ms linear 0s;
-	-ms-transition: all 300ms linear 0s;
+    margin-left: -250px;
+    left: 0;
+    top: 60px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    overflow-y:none;
+    z-index: 1000;
+    transition: all 300ms linear 0s;
+    -webkit-transform:all 300ms linear 0s;
+    -ms-transition: all 300ms linear 0s;
 }
 
 .sidebar-nav {
@@ -211,17 +212,18 @@ p.big-text {
 }
 
 .sidebar-nav li {
-	line-height: 40px;
-	font-size:18px;
-	text-align:center;
+    line-height: 40px;
+    font-size:18px;
+    text-align:center;
     font-family: 'Lora', serif;
-	padding:0 0;
-	border-bottom:1px solid;
+    padding:0 0;
+    border-bottom:1px solid;
+    width: 160px;
 }
 .sidebar-nav li span {
-	padding:0 10px 0 0;
-	margin:0 0 0 0;
-	font-size:1.4em;
+    padding:0 10px 0 0;
+    margin:0 0 0 0;
+    font-size:1.4em;
 }
 .sidebar-nav li a {
   display: block;
@@ -239,50 +241,50 @@ p.big-text {
   text-align:center;
 }
 .sidebar-nav > .sidebar-brand img {
-	width:60%;
+    width:60%;
 }
 #menu-close {
-	margin:20px 0;
-	border-radius:50%;
-	-webkit-border-radius:50%;
-	-moz-border-radius:50%;
-	width:42px!important;
-	height:30px!important;
-	font-size:24px;
-	display:inline-table;
-	text-indent:0;
-	padding:0 0 0 0;
+    margin:20px 0;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    width:42px!important;
+    height:30px!important;
+    font-size:24px;
+    display:inline-table;
+    text-indent:0;
+    padding:0 0 0 0;
 }
 #menu-close i {
-	padding:0 0 0 0;
-	margin:0 0 0 0;
+    padding:0 0 0 0;
+    margin:0 0 0 0;
 }
 #menu-close:hover i {
-	padding:0 0 0 0;
-	margin:0 0 0 0;
+    padding:0 0 0 0;
+    margin:0 0 0 0;
 }
 #menu-toggle {
-	top: 10px;
-	right: 10px;
-	position: fixed;
-	z-index: 1;
-	width:40px;
-	height:40px;
-	font-size:22px;
-	line-height:0px;
-	margin:10px 10px 0 0;
-	padding-top:9px;
-	text-align:center;
-	border-radius:50%;
-	-webkit-border-radius:50%;
-	-moz-border-radius:50%;
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    z-index: 1;
+    width:40px;
+    height:40px;
+    font-size:22px;
+    line-height:0px;
+    margin:10px 10px 0 0;
+    padding-top:9px;
+    text-align:center;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
 }
 #sidebar-wrapper.active {
-	right: 250px;
-	width: 250px;
-	transition: all 300ms linear 0s;
-	-webkit-transform:all 300ms linear 0s;
-	-ms-transition: all 300ms linear 0s;
+    left: 235px;
+    width: 250px;
+    transition: all 300ms linear 0s;
+    -webkit-transform:all 300ms linear 0s;
+    -ms-transition: all 300ms linear 0s;
 }
 
 .toggle {
@@ -319,6 +321,8 @@ p.big-text {
     padding: 0;
 }
 .banner-line h2 {
+    position: relative;
+    top: 120px;
 	font-size:48px;
 }
 .marriage_banner p {
@@ -352,6 +356,8 @@ p.big-text {
     width: 80%;
 }
 .banner_timer {
+    position: relative;
+    top: 120px;
     display: inline-table;
     margin: 30px 0 50px;
     padding: 0;
@@ -386,6 +392,8 @@ p.big-text {
 	line-height:90px;
 }
 .top_arrow {
+    position: relative;
+    top: 150px;
     margin:20px 0 0;
     padding: 0;
     text-align: center;
@@ -768,6 +776,9 @@ p.big-text {
 /* Carousel Area */
 
 .carousel-indicators {
+    position: absolute;
+    left: 50%;
+    top: 750px;
 	bottom:20px;
 }
 .carousel-indicators li {
@@ -777,6 +788,9 @@ p.big-text {
 	width:18px;
 	height:18px;
     transition: all 300ms linear 0s;
+}
+article .carousel-inner{
+    position:absolute;
 }
 .carousel-indicators li:hover, .carousel-indicators li.active {
 	margin:0 2px;
@@ -860,8 +874,9 @@ p.big-text {
 /* ====================================================== */
 
 .gallery_outer {
-    background: none repeat scroll 0 0 #FFFFFF;
-    padding:120px 0 90px 0;
+    background: none repeat scroll 0 0 rgba(0,255,239,0.8);
+    /*padding: 90px 0 50px 0;*/
+    height:796px;
 }
 .isotom_lant {
     margin: 0;

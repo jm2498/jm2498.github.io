@@ -1,6 +1,5 @@
 // Lantern Wedding Theme 
 // Version : v1.0
-
 function validate_email(email) 
 {
    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
@@ -211,37 +210,55 @@ function rsvp_submit()
 		$('#rsvp-form').hide();
 		$('#rsvp-loading').show();
 
-		$.ajax({
-			url: 'rsvp.php',
-			type: 'POST',
-			//cache: false,
-			data: {'name' : rsvp_name, 'email' : rsvp_email , 'persons' : rsvp_persons, 'wedding' : rsvp_wedding},
-			success: function(data) {
-							if(data == 'ok')
-							{
-								$('#rsvp-error').hide();
-								$('#rsvp-failed').hide();
-								$('#rsvp-form').hide();
-								$('#rsvp-loading').hide();
-								$('#rsvp-success').show();
-								
-								$('#rsvp-name').val('');
-								$('#rsvp-email').val('');
-								$('#rsvp-phone').val('');
-								$('#rsvp-subject').val('');
-								$('#rsvp-msg').val('');
-								setTimeout("$('#rsvp-success').hide();$('#rsvp-form').show();",5000);
-							}
-							else
-							{
-								$('#rsvp-error').hide();
-								$('#rsvp-success').hide();
-								$('#rsvp-form').hide();
-								$('#rsvp-loading').hide();
-								$('#rsvp-failed').show();
-								setTimeout("$('#rsvp-failed').hide();$('#rsvp-form').show();",5000);
-							}
-					}
-				});	
+		msg = {
+			'sender_mail': rsvp_email,
+			'sender_name': rsvp_name,
+			'receiver_mail': 'jiangyumao@gmail.com',
+			'receiver_name': 'Jiangyu Mao',
+			'subject': 'Wedding RSVP',
+			'content': 'Hi Jiangyu,<br><br>'+rsvp_name+' will come to your wedding.<br><br>'+'Total number of people: '+rsvp_persons+'<br><br>Accommodation: '+rsvp_wedding 
+		};
+
+		sendMail(msg);
 	}
+}
+
+function sendMail(msg){
+  $.ajax({
+    type: "POST",
+    url: "https://mandrillapp.com/api/1.0/messages/send.json",
+    data: {
+      'key': '26jf36Yj9O0bK99qo4OaIw',
+      'message': {
+        'from_email': msg.sender_mail,
+        'from_name': msg.sender_name,
+        'to': [
+            {
+              'email': msg.receiver_mail,
+              'name': msg.receiver_name,
+              'type': 'to',
+            }
+        ],
+        'autotext': 'true',
+        'subject': msg.subject,
+        'html': msg.content
+      }
+    }
+   }).done(function(response) {
+     // do what you want to do after the mail was sent
+    $('#rsvp-error').hide();
+    $('#rsvp-success').show();
+    $('#rsvp-failed').hide();
+    $('#rsvp-form').hide();
+    $('#rsvp-loading').hide();
+
+   }).fail(function(response){
+     // do what you want to do if it fails to send the email
+    $('#rsvp-error').hide();
+    $('#rsvp-success').hide();
+    $('#rsvp-failed').show();
+    $('#rsvp-form').hide();
+    $('#rsvp-loading').hide();
+
+   });
 }
