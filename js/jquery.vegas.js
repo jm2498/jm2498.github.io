@@ -108,7 +108,7 @@
                 step: step,
                 delay: delay,
                 preload: false,
-                loading: true,
+                loading: false,
                 backgrounds: backgrounds,
                 walk: walk
             };
