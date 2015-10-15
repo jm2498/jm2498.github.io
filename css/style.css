@@ -106,7 +106,7 @@ p.big-text {
 }
 .devider_main {
     padding:10px 0;
-	padding-bottom:30px;
+	/*padding-bottom:10px;*/
     text-align: center;
 }
 .small_btn, .small_btn:focus {
@@ -961,7 +961,7 @@ p.big-text {
 	text-align:center;
 	padding-top:90px;
 }
-.carousel-control {
+.carousel-control{
     width: 5%;
 }
 
