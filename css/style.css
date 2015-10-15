@@ -435,7 +435,7 @@ p.big-text {
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
     width:60%;
-	opacity:0.5;
+	opacity:1;
 }
 .recent_sermons {
 	border-radius:15px;
