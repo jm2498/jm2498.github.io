@@ -280,9 +280,6 @@ p {
 .option-set li a:hover, .option-set li a.selected {
     background-color: #333333;
 }
-.gallery_outer a {
-    top: 350px;
-}
 .gallery_outer h2 {
     color: #ffffff;
 }

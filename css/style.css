@@ -782,46 +782,38 @@ p.big-text {
 /* Carousel Area */
 
 .carousel-indicators {
-    position: absolute;
-    left: 50%;
-    top: 770px;
-	bottom:20px;
+    bottom:20px;
 }
 .carousel-indicators li {
-	margin:0 2px;
-	border:0;
-	background-color:rgba(0,0,0,0.2);
-	width:18px;
-	height:18px;
+    margin:0 2px;
+    border:0;
+    background-color:rgba(0,0,0,0.2);
+    width:18px;
+    height:18px;
     transition: all 300ms linear 0s;
 }
-article .carousel-inner{
-    position:absolute;
-    left: 5%;
-    width: 90%
-}
 .carousel-indicators li:hover, .carousel-indicators li.active {
-	margin:0 2px;
-	border:0;
-	background-color:rgba(0,0,0,0.7);
-	width:18px;
-	height:18px;
+    margin:0 2px;
+    border:0;
+    background-color:rgba(0,0,0,0.7);
+    width:18px;
+    height:18px;
     transition: all 300ms linear 0s;
 }
 .testimonial-solid.dark .carousel-indicators li {
-	margin:0 2px;
-	border:0;
-	background-color:rgba(251,251,251,0.2);
-	width:18px;
-	height:18px;
+    margin:0 2px;
+    border:0;
+    background-color:rgba(251,251,251,0.2);
+    width:18px;
+    height:18px;
     transition: all 300ms linear 0s;
 }
 .testimonial-solid.dark .carousel-indicators li:hover, .testimonial-solid.dark .carousel-indicators li.active {
-	margin:0 2px;
-	border:0;
-	background-color:rgba(251,251,251,0.7);
-	width:18px;
-	height:18px;
+    margin:0 2px;
+    border:0;
+    background-color:rgba(251,251,251,0.7);
+    width:18px;
+    height:18px;
     transition: all 300ms linear 0s;
 }
 
@@ -882,9 +874,8 @@ article .carousel-inner{
 /* ====================================================== */
 
 .gallery_outer {
-    background-color: rgba(129,216,208,1);
-    padding-top: 50px;
-    min-height: 1000px;
+    background: none repeat scroll 0 0 #81D8D0;
+    padding:50px 0 0 0;
 }
 .isotom_lant {
     margin: 0;
@@ -970,7 +961,9 @@ article .carousel-inner{
 	text-align:center;
 	padding-top:90px;
 }
-
+.carousel-control {
+    width: 5%;
+}
 
 /* ====================================================== */
 /* 11. Blog Content Styles                                */
