@@ -884,7 +884,7 @@ article .carousel-inner{
 .gallery_outer {
     background-color: rgba(129,216,208,1);
     padding-top: 50px;
-    height: 1000px;
+    min-height: 1000px;
 }
 .isotom_lant {
     margin: 0;
