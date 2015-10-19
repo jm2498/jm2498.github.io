@@ -312,6 +312,7 @@ p.big-text {
     font-size: 3em;
     line-height: 60px;
     margin: 10px;
+    margin-left: 60%;
 }
 .marriage_banner h3 {
     display: inline-table;
@@ -321,11 +322,9 @@ p.big-text {
     padding: 0;
 }
 .banner-line h2 {
-    position: absolute;
-    right: 10%;
-    top: 600px;
 	font-size:48px;
     color: #81D8D0;
+    margin-left: 60%;
 }
 .marriage_banner p {
     display: inline-table;
@@ -358,8 +357,6 @@ p.big-text {
     width: 80%;
 }
 .banner_timer {
-    position: relative;
-    top: 120px;
     display: inline-table;
     margin: 30px 0 50px;
     padding: 0;
@@ -394,8 +391,6 @@ p.big-text {
 	line-height:90px;
 }
 .top_arrow {
-    position: relative;
-    top: 150px;
     margin:20px 0 0;
     padding: 0;
     text-align: center;
@@ -435,7 +430,7 @@ p.big-text {
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
     width:60%;
-	opacity:1;
+	opacity:0.5;
 }
 .recent_sermons {
 	border-radius:15px;
@@ -780,6 +775,11 @@ p.big-text {
 }
 
 /* Carousel Area */
+
+.carousel-inner {
+    width: 80%;
+    margin-left: 10%;
+}
 
 .carousel-indicators {
     bottom:20px;

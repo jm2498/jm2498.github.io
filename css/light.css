@@ -111,9 +111,6 @@ p {
 	background:rgba(129,216,208,0.8);
 }
 .logo_top {
-    position: absolute;
-    top: 15px;
-    right: 100px;
     color: #000000;
 }
 .logo_top a {
@@ -139,7 +136,7 @@ p {
 /* ====================================================== */
 
 .about_us {
-    background: url("../img/bg/midtest.jpg") no-repeat fixed center center;
+    background: url("../img/bg/mid.jpg") no-repeat fixed center center;
     background-size: cover;
 }
 .about_us h1 {
